@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Fernanda Sanchez">
+    <meta name="description" content="Portafolio de desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>POSTRES NELS </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.webp" width="100px" alt="Logo de la página web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">¿Qué son los postres?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="PostresFamosos.html">Postres más famosos del mundo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <button id="mostrarModal" class="boton-modal"> Contacto</button>
+
+              <div id="modal" class="modal">
+                  <div class="modal-contenido">
+                      <span id="cerrarModal" class="cerrar">&times;</span>
+                      <h2>Formulario de Contacto</h2>
+                      <form id="formularioContacto">
+                          <label for="nombre">Nombre:</label>
+                          <input type="text" id="nombre" name="nombre" required>
+          
+                          <label for="email">Correo electrónico:</label>
+                          <input type="email" id="email" name="email" required>
+          
+                          <label for="mensaje">Mensaje:</label>
+                          <textarea id="mensaje" name="mensaje" required></textarea>
+          
+                          <button type="submit">Enviar</button>
+                      </form>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<br>
+<h1><center>Postres más famosos del Mundo</center></h1>
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <p class="testimonio-texto"  style="text-align: justify;">El postre es el platillo que se 
+              come después de la comida como tradición universal o también puedes elegirlos para satisfacer 
+              algunos antojos a lo largo del día. Es regla de vida que este sea dulce, aunque muchas veces suele 
+              variar entre lo dulce y agrio. Existen miles de recetas en todo el mundo, con variaciones en cuanto a 
+              ingredientes y formas de preparación. 
+            </p>
+           
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto" style="text-align: justify;">Es importante considerar que los postres ofrecen una gran aportación calórica y energética, por lo que se han diseñado en la actualidad
+               gran variedad de postres que cambian algunos ingredientes por otros con menos riesgos para la salud.</p>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto" style="text-align: justify;"> Sin duda probarlos podría provocarte una muerte 
+              deliciosa; pero tranquilo, estos postres solo te alegrarán la vida y son los más famosos del mundo, como 
+              también los pasteles más finos en el mundo gourmet, tanto por su forma de preparar como por sus nombres. 
+              Si llevas un curso de fotografía o  eres un community manager experto de una cuenta gastronómica,
+               amarás esta lista para tenerlo como un book fotográfico o contenid </p>
+                      </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+<br>
+
+          <p id="texto1">Los países más reconocidos por sus exquisitos y, en muchos casos,
+             premiados postres son Alemania, Argentina, Brasil, Colombia, Costa Rica, España,
+              Francia, Italia, Japón, Ecuador, México y Perú. En cada país, se defiende con 
+              orgullo sus creaciones dulces y se narra las historias de sus orígenes. Y esta 
+              lista que lleva varios de ellos llega con toda la intención de endulzarte el día.
+<br></b>
+            El mundo está lleno de dulces placeres. Por eso te compartimos este artículo que contiene
+             una lista con 30 deliciosos postres elaborados en diferentes partes del mundo, que debes 
+             probar sin excepción en algún momento de tu vida.
+        
+        </p>
+<br>
+        <h2 class="text-primary mb-4" id="typewriter3"></h2>  
+
+<!-- Postres famosos con tabla -->
+<center>
+<table>
+        <thead>
+            <tr>
+                <th>Postres Famosos</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfajores</td>
+                <td>Los alfajores son de origen argentino y son deliciosas galletas rellenas con dulce de leche.</td>
+            </tr>
+            <tr>
+                <td>Tiramisú</td>
+                <td>El tiramisú forma parte de los típicos postres italianos, está elaborado de chocolate, queso mascarpone y café.</td>
+            </tr>
+             <tr>
+                <td>Kanten</td>
+                <td>El Kanten, es un postre delicioso de origen japonés sacado de unas algas marinas muy raras y es una mezcla con jugo de frutas, <br>resulta delicioso además de saludable y proteico.</td>
+            </tr>
+            <tr>
+                <td>Torta negra</td>
+                <td>Representa uno de los postres navideños de mayor consumo en las fiestas decembrinas de Venezuela, con un intenso sabor a brandy<br>
+                  o ron acompañado de una textura crujiente por las nueces y la suavidad del bizcocho endulzado con azúcar morena.</td>
+            </tr>
+            <tr>
+              <td>Pastéis de Belém</td>
+              <td>Pastéis de Belém, es un postre típico de Portugal ideal para compartir en la mesa de la familia. Son una especie de pastelitos<br>
+                 de hojaldre y crema. Sin embargo se desconoce su receta.</td>
+          </tr>
+        </tbody>
+    </table>
+  </center>
+  <center>
+    <img src="imagenes/postres.webp" alt="Postres">
+    </center>
+
+ <!-- Pie de pagina (footer) -->
+ <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+  <img class="footer-logo" src="imagenes/icono.webp" alt="Logo de la pagina">
+  <p class="footer-texto text-center">Postres que endulzan la vida </p>
+  <div class="derechos-de-autor">Creado por Nely Fernanda Sanchez Rivera (2023) &#169;</div>
+</footer>
+
+
+  <canvas id="miCanvas">El navegador no soporta Canvas</canvas>  
+<script>
+const c=document.getElementById("miCanvas");
+const ctx=c.getContext("2d");
+ctx.fillStyle="blue";
+ctx.fillRect(20,20,75,50);
+<!--Manejo de Transparencia-->
+ctx.globalAlpha=0.2;
+ctx.fillStyle="blue";
+ctx.fillRect(50,50,75,50);
+ctx.fillStyle="blue";
+ctx.fillRect(80,80,75,50);
+</script>
+
+<canvas id="miCanvas2">El navegador no soporta Canvas</canvas>  
+<script>
+const c2=document.getElementById("miCanvas2");
+const ctx1=c2.getContext("2d");
+ctx1.fillStyle="blue";
+ctx1.fillRect(20,20,75,50);
+<!--Manejo de Transparencia-->
+ctx1.globalAlpha=0.2;
+ctx1.fillStyle="blue";
+ctx1.fillRect(50,50,75,50);
+ctx1.fillStyle="blue";
+ctx1.fillRect(80,80,75,50);
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>

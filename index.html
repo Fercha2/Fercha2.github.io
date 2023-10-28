@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Fernanda Sanchez">
+    <meta name="description" content="Portafolio de desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>POSTRES NELS </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.webp" width="100px" alt="Logo de la página web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">¿Qué son los postres?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="PostresFamosos.html">Postres más famosos del mundo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              
+    <button id="mostrarModal" class="boton-modal"> Contacto</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <h2>Formulario de Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<br>
+<h1><center>¿Qué son los postres?</center></h1>
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/postre1.webp" alt="Postre 1">
+            <p class="testimonio-texto"  style="text-align: justify;">Los postres son platos de sabor dulce o agridulce que se toman generalmente al final de una comida, por ello los que se sirven al final tienen la capacidad de resaltar y estimular cualquier paladar por exigente que sea,
+               siempre y cuando tengan una buena preparación.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Pastel Sabor Vainilla con Fresas de Adorno</p>
+              <p class="cargo">Costo aproximado $250</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/postre2.webp" alt="Postre 2">
+            <p class="testimonio-texto" style="text-align: justify;">Es importante considerar que los postres ofrecen una gran aportación calórica y energética, por lo que se han diseñado en la actualidad
+               gran variedad de postres que cambian algunos ingredientes por otros con menos riesgos para la salud.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Tostada de Ganash y fresas encima</p>
+              <p class="cargo">Costo aproximado $25 c/u</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/postre3.webp" alt="Postre 3">
+            <p class="testimonio-texto" style="text-align: justify;"> Cuando se habla de postres se entiende alguna preparación dulce, bien sean cremas, 
+              galletas, pasteles, helados, bombones, etc. </p>
+            <div class="testimonio-info">
+              <p class="cliente">Tarrito de Miel con Yogurt natural y cereales</p>
+              <p class="cargo">Costo aproximado $55 c/u</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+<br>
+  <h2 class="text-primary mb-4" id="typewriter"></h2>    
+
+ 
+          <p id="texto1">Antiguamente las comidas eran terminadas con frutos secos o 
+        frescos, miel o productos lácteos. En la Edad Media aparecen los primeros postres franceses 
+        como las compotas, jaleas, fouaces, tortas, gaufres, échoués, pasteles y flanes.
+<br>
+        A partir del siglo XVII los postres se convirtieron en composiciones muy elaboradas y adornadas 
+        con flores, con nougats, pirámides de frutas, bizcochos, cremas, almendras dulces con azahar y azúcar, 
+        confiterías secas, nueces. Para finales de este siglo aparecieron los helados, a partir de entonces la 
+        pastelería sufrió una evolución debido a la diversidad de pastas como base, entre ellas el hojaldre, merengue, 
+        pasta choux y la genovesa.
+        
+        </p>
+
+        <h2 class="text-primary mb-4" id="typewriter2"></h2>  
+
+<!-- tipos de postre -->
+<section class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Frios -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-brightness-high-fill"></i>
+        <p class="experiencia-titulo">Frios</p>
+        <p style="text-align: justify;">Este tipo de postres son servidos a temperaturas muy bajas, pueden ser igual o inferior a 25°, además de esto,
+           su preparación es a base de leche o huevos y cremas solidificadas, con una base de gelatina sin sabor.</p>
+           <img src="imagenes/postre frio1.webp" alt="Postre frio 1" width="300" height="200">
+      </div>
+      <!-- Calientes -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-brightness-high-fill"></i>
+        <p class="experiencia-titulo">Calientes</p>
+        <p style="text-align:justify; ">Estas delicias al paladar son preferidas en especial en la temporada de invierno, 
+          pero pueden ser servidas en cualquier época del año. </p><br>
+          <img src="imagenes/postre caliente 1.webp" alt="Postre caliente" width="300" height="200">
+      </div>
+      <!-- Crudos -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-brightness-high-fill"></i>
+        <p class="experiencia-titulo">Crudos</p>
+        <p style="text-align:justify; ">La elaboración de este tipo de postres saludables es sumamente sencilla, existen
+           numerosas recetas para la elaboración de este tipo de alimento, que además de fáciles, están llenos de energía.
+        </p>
+      
+      <img src="imagenes/postre crudo.webp" alt="Postre Crudo" width="300" height="200">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- tipos de postre -->
+<section class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Horneados -->
+      <div class="columna col-12 col-md-6">
+        <i class="bi bi-brightness-high-fill"></i>
+        <p class="experiencia-titulo">Horneados</p>
+        <p style="text-align: justify;">Las recetas de postres horneados son fáciles de elaborar y muy saludables, 
+          ya que al ser cocidos al horno, éstos conservan sus nutrientes y reducen la cantidad de grasa.</p>
+           <img src="imagenes/postre horneado.webp" alt="Postre Horneados" width="300" height="200">
+      </div>
+      <!-- Fritos -->
+      <div class="columna col-12 col-md-6">
+        <i class="bi bi-brightness-high-fill"></i>
+        <p class="experiencia-titulo">Fritos</p>
+        <p style="text-align:justify; ">Estos dulces pueden ser servidos fríos o calientes, pero para su preparación requieren de una fritura.  </p>
+          <img src="imagenes/postre frito.webp" alt="Postres Fritos" width="300" height="200">
+      </div>
+     </section>
+
+
+ <!-- Pie de pagina (footer) -->
+ <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+  <img class="footer-logo" src="imagenes/icono.webp" alt="Logo de la pagina">
+  <p class="footer-texto text-center">Postres que endulzan la vida</p>
+
+  
+  <div class="derechos-de-autor">Creado Nely Fernanda Sanchez Rivera (2023) &#169;</div>
+</footer>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+        
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Fernanda Sanchez">
+    <meta name="description" content="Portafolio de desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>POSTRES NELS </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.webp" width="100px" alt="Logo de la página web">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">¿Qué son los postres?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="PostresFamosos.html">Postres más famosos del mundo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                
+      <button id="mostrarModal" class="boton-modal"> Contacto</button>
+  
+      <div id="modal" class="modal">
+          <div class="modal-contenido">
+              <span id="cerrarModal" class="cerrar">&times;</span>
+              <h2>Formulario de Contacto</h2>
+              <form id="formularioContacto">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+  
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea>
+  
+                  <button type="submit">Enviar</button>
+              </form>
+          </div>
+      </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <h1><center>Pastelerias y Recetas Populares</center></h1>
+      <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+             <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.6885000872394!2d-102.30518472576898!3d21.86954785837273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ec2a9a16a2dd%3A0xc73c15dd5c9dda27!2sAv.%20Las%20Am%C3%A9ricas%20805-Int.%200%2C%20Santa%20Elena%2C%2020230%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1698360298405!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+              <div class="testimonio-info">
+                <p class="cliente">PASTELERIAS LA FLOR DE AGUASCALIENTES (PASTELERIAS ROLF S.A. DE C.V.)</p>
+                <p class="cargo">AVENIDA LAS AMERICAS, #805, Int. 0, FRACCIONAMIENTO SANTA ELENA, 20230, AGUASCALIENTES</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.9190062222283!2d-102.30699832576805!3d21.89919445731647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429eef69c773881%3A0x7248aaba429ab522!2sMargil%20de%20Jes%C3%BAs%201905%2C%20Las%20Arboledas%2C%2020020%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1698362352969!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="testimonio-info">
+                <p class="cliente">Obelie Pastelerías - Dulces y pasteles bodas</p>
+                <p class="cargo">Margil de Jesús, 1905 Fracc. Arboledas, 20020, Aguascalientes</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.3621963377377!2d-102.29730632576866!3d21.882124157924785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee7b55251ce3%3A0xc270a1f9fdff738e!2sJos%C3%A9%20Mar%C3%ADa%20Morelos%20y%20Pav%C3%B3n%20213B%2C%20Zona%20Centro%2C%2020000%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1698362548103!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
+              <div class="testimonio-info">
+                <p class="cliente">PAsteleria Cristal</p>
+                <p class="cargo">Jose Maria Morelos Y Pavón 213b, Zona Centro Esta Ubicado Justo Frente Al Monte De Piedad, Aguascalientes 20000 Mexico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+<!-- videos -->
+<section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Receta 1 -->
+        <div class="columna col-12 col-md-4">
+            <i class="bi bi-camera-reels-fill"></i>
+          <p class="experiencia-titulo">Receta 1 (Trufas de cava y frambueza)</p>
+          <p style="text-align: justify;">Las trufas de cava y frambuesa son un delicioso postre o dulce que combina ingredientes como cava (un tipo de vino espumoso), frambuesas y chocolate. Estas trufas son una opción popular para celebraciones especiales o como un regalo gourmet. Aquí tienes una receta básica para hacer trufas de cava y frambuesa:</p>
+         <br><br> <br><br> <br><br> <br><br> <br><br> 
+        </div>
+        
+
+        <!-- Receta 2 -->
+        <div class="columna col-12 col-md-4">
+            <i class="bi bi-camera-reels-fill"></i>
+          <p class="experiencia-titulo">Receta 2 (Helados, sorbetes)</p>
+          <p style="text-align: justify;">Cuando buscamos un postre ligero con el que rematar una comida o 
+            cena copiosa, nuestros mejores aliados son los helados, sorbetes y polos. Son refrescantes, digestivos
+             y ayudan a rebajar la sensación de pesadez que viene cuando nos pasamos comiendo. Nos encanta el helado 
+             de cerezas y yogur, en el que se pueden usar otros frutos de temporada o frutos rojos congelados, como es el 
+             caso del helado de frutos rojos y yogur sin heladera.</p>
+         <br><br> <br><br> <br><br> <br><br> 
+            
+        </div>
+        
+
+ <!-- Receta 3 -->
+ <div class="columna col-12 col-md-4">
+    <i class="bi bi-camera-reels-fill"></i>
+  <p class="experiencia-titulo">Receta 3 (Cakes exprés en microondas)</p>
+  <p style="text-align: justify;">El microondas es un gran aliado cuando se trata de ahorrar tiempo 
+    en la cocina y con el se puede hacer mucho más que calentar la leche del desayuno o las sobras de la 
+    comida. Los mug cakes o bizcochos en taza son un buen ejemplo que os animamos a poner en práctica. ¿Qué 
+    os parece un mug cake de chocolate, jengibre y pera o un bizcocho de queso y cerezas en taza para romper el hielo?</p>
+ <br><br> <br><br> <br><br> <br><br> 
+    
+</div>
+
+        
+          <video controls id="video1">
+            <source src="imagenes/Trufas.mp4" type="video/mp4"   >
+            Tu navegador no soporta la reproduccion de video
+        </video>     
+           
+        <video controls id="video2">
+            <source src="imagenes/Helado.mp4" type="video/mp4"   >
+            Tu navegador no soporta la reproduccion de video
+        </video>   
+   
+        <video controls id="video3">
+            <source src="imagenes/Pastel.mp4" type="video/mp4"   >
+            Tu navegador no soporta la reproduccion de video
+        </video>   
+
+
+      
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Pie de pagina (footer) -->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+  <img class="footer-logo" src="imagenes/icono.webp" alt="Logo de la pagina">
+  <p class="footer-texto text-center">Postres que endulzan la vida </p>
+  <div class="derechos-de-autor">Creado por Nely Fernanda Sanchez Rivera (2023) &#169;</div>
+</footer>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="main.js"></script>  
+</body>
+</html>

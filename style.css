@@ -1,0 +1,430 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #91b2f0;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(3, 3, 36);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
+  color:#140538
+}
+
+/*Poner Estilo a la tabla*/
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+ 
+  top: 200px;
+  left: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+th,
+td {
+  border: 2px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #050424;
+  text-align: center;
+  color: rgba(217, 239, 250, 0.808);
+}
+
+tr:nth-child(even) {
+  background-color: #cddbff;
+}
+
+tr:hover {
+  background-color: #b8b9ff;
+}
+
+
+/*Canvas*/
+#miCanvas {
+  position: relative; /* Establecemos la posición relativa */
+  left:20px; /* Cambia esta propiedad según la posición horizontal deseada */
+  top: -820px; /* Cambia esta propiedad según la posición vertical deseada */
+}
+
+#miCanvas2 {
+  position: relative; /* Establecemos la posición relativa */
+  right: -840px; /* Cambia esta propiedad según la posición horizontal deseada */
+  top: -820px; /* Cambia esta propiedad según la posición vertical deseada */
+}
+
+
+
+/*Poner color al carrucel*/
+
+  /* Estilos generales del carrusel */
+  #testimonios-carrusel {
+    background-color: #e5f3ff; /* Fondo azul */
+  }
+
+  .carousel-inner {
+    background-color: #d4e9fc; /* Fondo azul */
+  }
+
+  .carousel-dark .carousel-control-prev, .carousel-dark .carousel-control-next {
+    color: #0074E4; /* Flechas de navegación en azul */
+  }
+
+  .carousel-dark .carousel-indicators li {
+    background-color: #0074E4; /* Indicadores en azul */
+  }
+
+  /* Estilos de los elementos del carrusel */
+  .testimonio-texto {
+    color: #000000; /* Texto en blanco */
+  }
+
+  .cliente, .cargo {
+    color: #002936; /* Texto en azul claro */
+  }
+
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+
+footer {
+  min-height: 400px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+.Titulo{
+  color:#111158;
+}
+
+/* Estilo para ocultar el modal por defecto */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color:white;
+  background-color: rgba(92, 130, 255, 0.808);
+}
+
+/* Estilo para el contenido del modal */
+.modal-contenido {
+  background-color: #03021a;
+  margin: 10% auto;
+  padding: 20px;
+  border: 3px solid #150541;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Estilo para el botón de cerrar */
+.cerrar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.boton-modal {
+  background-color:  #91b2f0;
+  color: white; /* Cambia el color del texto a blanco para mejorar la legibilidad */
+  padding: 10px 20px; /* Añade espaciado interno al botón para que se vea mejor */
+  border: none; /* Elimina el borde del botón si lo tienes por defecto */
+  cursor: pointer;
+  /* Agrega otros estilos según tus preferencias */
+}
+
+.boton-modal:hover {
+  background-color: #050424; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+/*Estilo del Video*/
+#video1{
+  width: 300px; /* Ancho deseado */
+  height: 300px; /* Altura deseada */
+  overflow: hidden;
+  position: absolute;
+  top: 1110px; /*Da altura de un texto*/
+  left: 140px; /*Controla para que se mueva al lado izquierdo*/
+}
+
+#video2{
+  width: 270px; /* Ancho deseado */
+  height: 250px; /* Altura deseada */
+  overflow: hidden;
+  position: absolute;
+  top: 1160px; /*Da altura de un texto*/
+  left: 540px; /*Controla para que se mueva al lado izquierdo*/
+}
+
+#video3{
+  width: 270px; /* Ancho deseado */
+  height: 250px; /* Altura deseada */
+  overflow: hidden;
+  position: absolute;
+  top: 1160px; /*Da altura de un texto*/
+  left: 925px; /*Controla para que se mueva al lado izquierdo*/
+}
+
+
+
+/* Estilos para el formulario */
+form {
+  text-align: left;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #91b2f0;
+  color: #020202;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Texto Inicial de la historia de los postres*/
+
+#texto1 {
+  top: 125px; /* Distancia desde la parte superior */
+  left: 75px; /* Distancia desde la izquierda */
+  text-align: justify;
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 180px;
+}
+
+
+/*Parte para darle color al estilo de los tipos de postre*/
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: rgb(14, 11, 11);
+  background-color:#a5aee0;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
